@@ -493,12 +493,7 @@
       },
       "isModel": {
         "params": [
-          {
-            "name": "name",
-            "type": "string",
-            "mandatory": false,
-            "default": ""
-          }
+          { "name": "name", "type": "any", "mandatory": false, "default": "" }
         ],
         "result": "boolean"
       },

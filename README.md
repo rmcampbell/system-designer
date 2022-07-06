@@ -1,10 +1,6 @@
 # System Designer
 
-[![npm](https://img.shields.io/npm/v/system-designer.svg)](https://www.npmjs.com/package/system-designer)
-[![Build Status](https://travis-ci.org/design-first/system-designer.svg?branch=master)](https://travis-ci.org/design-first/system-designer)
-[![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
-[![devDependency Status](https://david-dm.org/design-first/system-designer/dev-status.svg)](https://david-dm.org/design-first/system-designer#info=devDependencies)
-[![npm](https://img.shields.io/npm/dt/system-designer.svg)](https://www.npmjs.com/package/system-designer)
+[![cucumber tests](https://github.com/design-first/system-designer/actions/workflows/cucumber.yml/badge.svg?branch=master)](https://github.com/design-first/system-designer/actions/workflows/cucumber.yml)
 
 ![Image Alt](https://designfirst.io/img/systemdesigner.png)
 
@@ -33,7 +29,7 @@ If you look at the different JavaScript frameworks on the market, you will notic
 
 System Designer uses [UML](http://www.uml.org), a standard, to define your model. So you probably already know how to design in System Designer even if you have never run it.
 
-The definition of the model is stored on a JSON format called [MSON](https://system-runtime.readme.io/docs/design-your-model#section-mson). With [MSON](https://system-runtime.readme.io/docs/design-your-model#section-mson) you can define types, classes, one to one / one to many relationships and multi inheritance between classes.
+The definition of the model is stored on a JSON format called [MSON](https://designfirst.io/systemruntime/documentation/docs/en/design-your-model#defining-your-model). With [MSON](https://designfirst.io/systemruntime/documentation/docs/en/design-your-model#defining-your-model) you can define types, classes, one to one / one to many relationships and multi inheritance between classes.
 
 #### Code the behavior of your system
 
@@ -134,15 +130,15 @@ Then in your [System Designer for Cordova](https://github.com/design-first/syste
 
 ```sh
 # build for ios
-cordova build ios
+npx cordova build ios
 
 # build for android
-cordova build android
+npx cordova build android
 ```
 
 ## Development
 
-#### Web
+### Web
 
 To start System Designer in development mode for web:
 
@@ -152,7 +148,7 @@ npm run dev
 
 Once server started, go to [http://localhost:9001/](http://localhost:9001/). All the modifications to the source code of System Designer will rebuild the solution and refresh the page.
 
-#### Mobile devices
+### Mobile devices
 
 To start System Designer in development mode for mobile devices:
 
@@ -174,7 +170,7 @@ Once server started, go to [http://localhost:9001/](http://localhost:9001/). All
 
 ## License
 
-Copyright © 2021 Erwan Carriou
+Copyright © 2022 Erwan Carriou
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
